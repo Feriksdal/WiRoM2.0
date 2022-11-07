@@ -19,6 +19,44 @@ YouTube Link: https://youtu.be/wN0N37AJlYo
 ## Documentation:
 Documentation can be found under [**/Documentation**](https://github.com/gunnarkleiven/WiRoM2.0/tree/master/Documentation), 
 
+## Missing Dependensies  
+Some users may have to get a hold of dependensies, such as [request](https://pypi.org/project/requests/) and [Pika](https://pika.readthedocs.io/en/stable/).  
+Open a terminal, go to where you’ve installed Python (most likely in “program files”).
+Then go into the script folder, from there you can run ``pip install pika``, and  ``pip install requests``.
+
+
+# Quick Startup
+
+Here is a shortended list of instructions for users (windows) that have already installed and run WiRom once on their computer:
+Open powershell, or any terminal you prefer
+## Terminal 1  
+   Change directory using
+   ```
+   cd C:\Users\<username>\WiRoM2.0\web_interface
+   ```
+   From there, set the envoirment variable; NODE_OPTIONS with:
+   ```
+   $env:NODE_OPTIONS = "--openssl-legacy-provider"
+   ```  
+   Afterwards, run it
+   ```
+   npm start
+   ```
+## Terminal 2  
+simliar steps as above, change directory, set envoirment variable, the go back to the main folder and run flask
+```
+Cd C:\Users\<username>\WiRoM2.0\backend\.venv\Scripts> .\activate
+$env:FLASK_APP = "backend"
+cd C:\Users\<username>\WiRoM2.0\
+flask --app backend run
+```
+## Terminal 3  
+run webots from it's location
+```
+cd C:\Program Files\Webots\msysm4\ming64\bin
+.\webots.exe --stream
+```
+
 
 # Setup Manual
 
