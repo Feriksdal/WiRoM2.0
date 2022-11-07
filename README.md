@@ -46,14 +46,22 @@ Open powershell, or any terminal you prefer
 simliar steps as above, change directory, set envoirment variable, the go back to the main folder and run flask
 ```
 Cd C:\Users\<username>\WiRoM2.0\backend\.venv\Scripts> .\activate
+```
+```
 $env:FLASK_APP = "backend"
+```
+```
 cd C:\Users\<username>\WiRoM2.0\
+```
+```
 flask --app backend run
 ```
 ## Terminal 3  
 run webots from it's location
 ```
 cd C:\Program Files\Webots\msysm4\ming64\bin
+```
+```
 .\webots.exe --stream
 ```
 
