@@ -46,7 +46,10 @@ Open powershell, or any terminal you prefer
 ## Terminal 2  
 simliar steps as above, change directory, set envoirment variable, the go back to the main folder and run flask
 ```
-cd ~\WiRoM2.0\backend\.venv\Scripts> .\activate
+cd ~\WiRoM2.0\backend\.venv\Scripts
+```
+```
+.\activate
 ```
 ```
 $env:FLASK_APP = "backend"
